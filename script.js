@@ -21,7 +21,7 @@ function displayClock() {
     let time = hour + ":" + minute + ":" + second + " " + session;
 
     console.log(time);
-    document.getElementById("clock").textContent = time;
+    document.getElementById("clock").innerHTML = time;
     setTimeout(displayClock, 1000);
 }
 
